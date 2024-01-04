@@ -1,0 +1,103 @@
+.playground{
+    max-width: 480px !important;
+    min-height: 320px !important;
+    background: #3d3101;
+    background-image: url(resources/bg_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Top Area*/
+.weapon{
+    width: 100%;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-item{
+    padding: 0;
+    margin: 5px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0;
+}
+
+.img_box{
+    width: 70px;
+    height: 27px;
+}
+
+.h_nav{
+    height: 60px;
+}
+
+.img_wd{
+    width: 70px;
+    height: 27px;
+    background-size: cover;
+    display: flex;
+}
+
+.txt_price{
+    color: #9e9e9e;
+    font-size: 11px;
+}
+
+.me_tag{
+    margin-left: -15px;
+}
+
+.ms_tag{
+    margin-right: -15px;
+}
+
+.txt_tag{
+    color: #9e9e9e;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.price_box{
+    padding: 0;
+    height: 25px;
+    background: #0B0C0C;
+}
+
+.play-area{
+    min-height: 210px;
+}
+
+.shoot{
+    margin-top: 135px;
+}
+
+.gun{
+    position: relative;
+}
+
+.img_responsive {
+    width: 70px;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.img_press{
+    width: 20px;
+    height: auto;
+    background-size: cover;
+    display: flex; 
+    position: relative;
+}
+
+.pres{
+    margin-top: 166px;
+    left: 32px; 
+}

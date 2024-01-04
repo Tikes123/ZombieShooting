@@ -1,0 +1,244 @@
+.playground{
+    max-width: 480px !important;
+    min-height: 320px !important;
+    background: #3d3101;
+    background-image: url(resource/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Top Area*/
+.weapon{
+    width: 100%;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-item{
+    padding: 0;
+    margin: 5px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0;
+}
+
+.img_box{
+    width: 91px;
+    height: 43px;
+}
+
+.h_nav{
+    height: 70px;
+}
+
+.nav_bg{
+    background-image: url(resource/nav.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_wd{
+    width: 82px;
+    height: 45px;
+    background-size: cover;
+    display: flex;
+    padding: 3px;
+}
+
+.txt_price{
+    color: #FFECB3;
+    font-size: 12px;
+}
+
+/* .me_tag{
+    margin-left: -15px;
+}
+
+.ms_tag{
+    margin-right: -15px;
+} */
+
+.txt_tag{
+    color: #FFECB3;
+    font-size: 16px;
+}
+
+.price_box{
+    padding: 3px;
+    margin: 3px;
+    height: 21px;
+    background-image: url(resource/nav_tag.png);
+}
+
+.img_icon{
+    width: 21px;
+}
+
+.price_won{
+    padding: 0;
+    width: 85px;
+    height: 25px;
+    background: #e4355c;
+    border-radius: 6px;
+}
+
+.play-area{
+    min-height: 210px;
+}
+
+.shoot{
+    margin-top: 139px;
+}
+
+.gun{
+    position: relative;
+}
+
+.img_responsive {
+    width: 70px;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.img_press{
+    width: 20px;
+    height: auto;
+    background-size: cover;
+    display: flex; 
+    position: relative;
+}
+
+.pres{
+    margin-top: 154px;
+    left: 24px;
+}
+
+.zone{
+    position: relative;
+    display: flex;
+}
+
+.zombie1{
+    width: 20px;
+    margin-top: 42px;
+    margin-left: 108px;
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.zombie2{
+    width: 20px;
+    margin-top: 42px;
+    margin-left: 158px;
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.zombie3{
+    width: 20px;
+    margin-top: 42px;
+    margin-left: 208px;
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.zombie4{
+    width: 20px;
+    margin-top: 42px;
+    margin-left: 258px;
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.zombie5{
+    width: 20px;
+    margin-top: 42px;
+    margin-left: 308px;
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.zombie6{
+    width: 20px;
+    margin-top: 42px;
+    margin-left: 358px;
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.img_zombie{
+    background-size: cover;
+    display: block;
+    width: 36px;
+    height: 128px;
+}
+
+/*Bullet Animation*/
+@-webkit-keyframes m_fire {
+    0% {
+      top: 20%;
+      left: 48%;
+    }
+    75% {
+      top: 10%;
+      left: 48%;
+    }
+    100% {
+      top: 0%;
+      left: 48%;
+    }
+  }
+  
+  @keyframes m_fire {
+    0% {
+      top: 20%;
+      left: 48%;
+    }
+    75% {
+      top: 10%;
+      left: 48%;
+    }
+    100% {
+      top: 0%;
+      left: 48%;
+    }
+  }
+  
+  #gun_fire {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    animation: m_fire 0.5s linear 0s infinite;
+    -webkit-animation: m_fire 5s linear 0s infinite;
+    -moz-animation: m_fire 5s linear 0s infinite;
+    --0-animation: m_fire 5s linear 0s infinite;
+    z-index: 1;
+  }
+
+  /*Bullet Animation*/

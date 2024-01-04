@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie Shooting</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+
+    <!--CSS LINK END-->
+
+    <!--Playable Ads Require-->
+    <meta name="ad.orientation" content="landscape" />
+    <meta name="ad.size" content="width=480,height=320" />
+
+    <script type="text/javascript">
+      var clickTag = "#";
+    </script>
+    <!--Requirement END-->
+
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid m-0 p-0">
+        <div class="playground mx-auto">
+          <!--Navigation-->
+          <div class="weapon">
+            <nav class="navbar">
+              <div class="container-fluid">
+                <div class="d-flex weapon" id="navbarNav">
+                  <ul class="navbar-nav me_tag">
+                    <li class="nav-item">
+                      <div class="h_nav nav_bg">
+                        <div class="img_box">
+                          <a class="nav-link"
+                            ><img
+                              src="resource/gun1.png"
+                              alt="Nature"
+                              id="t1"
+                              class="mx-auto img_wd"
+                          style="padding: 5px;"/></a>
+                        </div>
+                        <div class="d-flex price_box">
+                          <p class="px-1 txt_price">$500</p>
+                          <span class="d-flex my-auto ms-auto"><img
+                            src="resource/dollar.png"
+                            alt="Nature"
+                            id="t1"
+                            class="img_icon"
+                        /></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <div class="h_nav nav_bg">
+                        <div class="img_box">
+                          <a class="nav-link"
+                            ><img
+                              src="resource/gun2.png"
+                              alt="Nature"
+                              id="t1"
+                              class="img_wd"
+                          /></a>
+                        </div>
+                        <div class="d-flex price_box">
+                          <p class="px-1 txt_price">$1000</p>
+                          <span class="d-flex my-auto ms-auto"><img
+                            src="resource/dollar.png"
+                            alt="Nature"
+                            id="t1"
+                            class="img_icon"
+                        /></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <div class="h_nav nav_bg">
+                        <div class="img_box">
+                          <a class="nav-link"
+                            ><img
+                              src="resource/gun3.png"
+                              alt="Nature"
+                              id="t1"
+                              class="img_wd"
+                          /></a>
+                        </div>
+                        <div class="d-flex price_box">
+                          <p class="px-1 txt_price">$2000</p>
+                          <span class="d-flex my-auto ms-auto"><img
+                            src="resource/dollar.png"
+                            alt="Nature"
+                            id="t1"
+                            class="img_icon"
+                        /></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+   
+                  <!---->
+
+                  <ul class="navbar-nav ms-auto ms_tag">
+                    <li class="nav-item ms-auto">
+                      <div class="d-flex price_won">
+                        <p class="px-1 txt_tag">$100</p>
+                        <span class="d-flex my-auto ms-3"><img
+                            src="resource/dollar.png"
+                            alt="Nature"
+                            id="t1"
+                            class="img_icon"
+                        /></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!--Navigation End-->
+
+          <!--PlayGround Area-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 p-0">
+                <div class="play-area">
+                  <div class="gun">
+                    <a class="nav-link"
+                      onclick="fire()">
+                      <span><img
+                        src="resource/gun.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_responsive shoot"
+                      /></span>
+                      <span><img
+                        src="resource/hand.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_press pres"
+                      /></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 p-0">
+                <div class="play-area">
+                  <div class="zone">
+                    <div class="zombie1"
+                      ><img
+                        src="resource/skin1.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_zombie"
+                    /></div>
+                    <div class="zombie2"
+                      ><img
+                        src="resource/skin2.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_zombie"
+                    /></div>
+                    <div class="zombie3"
+                      ><img
+                        src="resource/skin3.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_zombie"
+                    /></div>
+                    <div class="zombie4"><img
+                        src="resource/skin4.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_zombie"
+                    /></div>
+                    <div class="zombie5"
+                      ><img
+                        src="resource/skin5.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_zombie"
+                    /></div>
+                    <div class="zombie6"
+                      ><img
+                        src="resource/skin6.png"
+                        alt="Nature"
+                        id="t1"
+                        class="img_zombie"
+                    /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--PlayGround Area End-->
+        </div>
+      </div>
+    </main>
+
+    <!--JS Script -->
+    <script></script>
+    <!--JS Script End-->
+  </body>
+</html>

@@ -1,0 +1,673 @@
+.playground {
+  max-width: 480px !important;
+  min-height: 320px !important;
+  background: #3d3101;
+  background-image: url(resource/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Top Area*/
+.weapon {
+  width: 100%;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row !important;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0;
+  margin: 5px;
+}
+
+.navbar-nav .nav-link {
+  padding: 0;
+}
+
+.img_box {
+  width: 91px;
+  height: 43px;
+}
+
+.h_nav {
+  height: 70px;
+}
+
+.nav_bg {
+  background-image: url(resource/nav.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_wd {
+  width: 82px;
+  height: 45px;
+  background-size: cover;
+  display: flex;
+  padding: 3px;
+}
+
+.txt_price {
+  color: #ffecb3;
+  font-size: 12px;
+}
+
+/* .me_tag{
+    margin-left: -15px;
+}
+
+.ms_tag{
+    margin-right: -15px;
+} */
+
+.txt_tag {
+  color: #ffecb3;
+  font-size: 16px;
+}
+
+.price_box {
+  padding: 3px;
+  margin: 3px;
+  height: 21px;
+  background-image: url(resource/nav_tag.png);
+}
+
+.img_icon {
+  width: 21px;
+}
+
+.price_won {
+  padding: 0;
+  width: 85px;
+  height: 25px;
+  background: #e4355c;
+  border-radius: 6px;
+}
+
+.playing_zone {
+  position: fixed;
+  display: flex;
+}
+
+.play-area {
+  min-height: 210px;
+}
+
+.shoot {
+  margin-top: 139px;
+}
+
+.gun {
+  position: relative;
+  margin-top: -63px;
+}
+
+.img_responsive {
+  width: 70px;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.img_press {
+  width: 20px;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: relative;
+}
+
+.pres {
+  margin-top: 136px;
+  left: 24px;
+}
+
+.bul_area {
+  position: absolute;
+  margin-left: 96px;
+  margin-top: 150px;
+}
+
+.bul {
+  position: absolute;
+  width: 14px;
+  height: auto;
+}
+
+.zone {
+  margin-left: 54px;
+  position: relative;
+  display: flex;
+}
+
+.zombie1 {
+  width: 20px;
+  margin-top: 42px;
+  margin-left: 108px;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.zombie1_dead {
+  transform: rotate(88deg);
+  margin-top: 88px;
+  margin-left: 39px;
+}
+
+   /* .zombie1_dead {
+    
+    margin-top: 88px;
+    margin-left: 39px;
+    position: fixed;
+    animation-name: example;
+    background-repeat: no-repeat;
+    animation-duration: 5s;
+    transition: linear 0.5 infinite;
+   }
+    
+    @keyframes example {
+    
+        /* 0%   {background-image: url("resource/skin1.png");width: 30px;
+        height: 130px;} 
+        50%  {background-image: url("resource/skin1a.png");width: 30px;
+        height: 130px;}
+        100%   {background-image: url("resource/skin1b.png");width: 150px;
+            height: 30px;}
+
+        /* from {background-image: url("resource/skin1a.png");width: 386px;
+            height: 386px;}
+        to {background-image: url("resource/skin1b.png");width: 386px;
+            height: 386px;} 
+    } */
+
+.zombie2 {
+  width: 20px;
+  margin-top: 42px;
+  margin-left: 158px;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.zombie3 {
+  width: 20px;
+  margin-top: 42px;
+  margin-left: 208px;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.zombie4 {
+  width: 20px;
+  margin-top: 42px;
+  margin-left: 258px;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.zombie5 {
+  width: 20px;
+  margin-top: 42px;
+  margin-left: 308px;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.zombie6 {
+  width: 20px;
+  margin-top: 42px;
+  margin-left: 358px;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+}
+
+.img_zombie {
+  background-size: cover;
+  display: block;
+  width: 36px;
+  height: 128px;
+}
+
+.hide_zombie {
+    display: none;
+}
+
+.shot {
+  transform: rotate(88deg);
+  margin-top: 88px;
+  margin-left: 93px;
+}
+
+.aftrshot_gun {
+  transform: rotate(45deg);
+  margin-left: 50px;
+}
+
+/*Bullet Animation*/
+@-webkit-keyframes m_fire {
+  0% {
+    top: 0%;
+    left: 10%;
+  }
+  25% {
+    top: 0%;
+    left: 20%;
+  }
+  75% {
+    top: 0%;
+    left: 440%;
+  }
+}
+
+@keyframes m_fire {
+  0% {
+    top: 0%;
+    left: 10%;
+  }
+  25% {
+    top: 0%;
+    left: 20%;
+  }
+  75% {
+    top: 0%;
+    left: 440%;
+  }
+}
+
+.gunfire {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: auto;
+  animation: m_fire 0.8s linear 0s infinite;
+  -webkit-animation: m_fire 0.8s linear 0s infinite;
+  -moz-animation: m_fire 0.8s linear 0s infinite;
+  --0-animation: m_fire 0.8s linear 0s infinite;
+  z-index: 1;
+}
+
+/*Bullet Animation End*/
+
+/*After Shot Bullet Animation*/
+@-webkit-keyframes after_fire {
+  0% {
+    bottom: 25%;
+    left: 10%;
+  }
+  10% {
+    bottom: 20%;
+    left: 20%;
+  }
+  25% {
+    bottom: 10%;
+    left: 240%;
+  }
+  100% {
+    bottom: 0%;
+    left: 300%;
+  }
+}
+
+@keyframes after_fire {
+  0% {
+    bottom: 25%;
+    left: 10%;
+  }
+  10% {
+    bottom: 20%;
+    left: 20%;
+  }
+  25% {
+    bottom: 10%;
+    left: 240%;
+  }
+  100% {
+    bottom: 0%;
+    left: 300%;
+  }
+}
+
+.after_shot {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: auto;
+  animation: after_fire 0.8s linear 0s infinite;
+  -webkit-animation: after_fire 0.8s linear 0s infinite;
+  -moz-animation: after_fire 0.8s linear 0s infinite;
+  --0-animation: after_fire 0.8s linear 0s infinite;
+  z-index: 1;
+}
+
+/*After Shot Bullet Animation End*/
+
+/*Zombie Trail*/
+@-webkit-keyframes a {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+@keyframes a {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+.trail_a {
+  animation: a 0.8s linear 0s infinite;
+  -webkit-animation: a 0.8s linear 0s infinite;
+  -moz-animation: a 0.8s linear 0s infinite;
+  --0-animation: a 0.8s linear 0s infinite;
+  z-index: 1;
+}
+
+@-webkit-keyframes b {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+@keyframes b {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+.trail_b {
+  margin-left: -12px;
+  animation: b 0.8s linear 0s infinite;
+  -webkit-animation: b 0.8s linear 0s infinite;
+  -moz-animation: b 0.8s linear 0s infinite;
+  --0-animation: b 0.8s linear 0s infinite;
+  z-index: 1;
+}
+
+@-webkit-keyframes c {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+@keyframes c {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: 0%;
+  }
+  20% {
+    top: 0%;
+    left: 0%;
+  }
+  30% {
+    top: 0%;
+    left: 0%;
+  }
+  40% {
+    top: 0%;
+    left: 0%;
+  }
+  50% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+.trail_c {
+  margin-left: -48px;
+  animation: c 0.8s linear 0s infinite;
+  -webkit-animation: c 0.8s linear 0s infinite;
+  -moz-animation: c 0.8s linear 0s infinite;
+  --0-animation: c 0.8s linear 0s infinite;
+  z-index: 1;
+}
+
+
+
+/**/
+@-webkit-keyframes runway {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+@keyframes runway {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  10% {
+    top: 0%;
+    left: -10%;
+  }
+  20% {
+    top: 0%;
+    left: -20%;
+  }
+  30% {
+    top: 0%;
+    left: -30%;
+  }
+  40% {
+    top: 0%;
+    left: -40%;
+  }
+  50% {
+    top: 0%;
+    left: -50%;
+  }
+}
+
+.z_runway {
+  animation: runway 3s linear 0s infinite;
+  -webkit-animation: runway 3s linear 0s infinite;
+  -moz-animation: runway 3s linear 0s infinite;
+  --0-animation: runway 3s linear 0s infinite;
+  z-index: 1;
+}
+/**/
+/*Zombie Trail*/
+
+/*TRY NOW MODAL*/
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 320px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal_padding {
+    max-width: 480px !important;
+    max-height: 320px !important;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 !important;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.modal_bg {
+    padding-bottom:40px;
+    background-color: #4016478c !important;
+    background-image: url(resources/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: myTok 0.3s linear 0.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes myTok {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .img_respo{
+    width: 175px;
+    height: auto;
+  }

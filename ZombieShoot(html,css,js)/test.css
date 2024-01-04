@@ -1,0 +1,33 @@
+.zombie1_dead {
+  width: 259px;
+  height: 280px;
+  /* animation-name: example; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+
+  /* 0%   {background-image: url("resource/skin1.png");width: 386px;
+    height: 386px;} */
+  50%  {background-image: url("resource/skin1a.png");width: 386px;
+    height: 386px;}
+  100%   {background-image: url("resource/skin1b.png");width: 386px;
+      height: 386px;}
+  /* from {background-image: url("resource/skin1a.png");width: 386px;
+      height: 386px;}
+  to {background-image: url("resource/skin1b.png");width: 386px;
+      height: 386px;} */
+}
+
+._img{
+  display: none;
+  width: 259px;
+  height: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
